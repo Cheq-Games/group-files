@@ -6,9 +6,9 @@ project wise.
 Please ensure that you follow suit when coding :
 
 1) Comment your code as much as possible
-2) For methods and variables spanning more than one words please use camelCase
-3) all class names should begin with a Capital letter
-4) on commit of code please indicate what was done since last commit, eg, fixed indention problems
+<br>2) For methods and variables spanning more than one words please use camelCase
+<br>3) all class names should begin with a Capital letter
+<br>4) on commit of code please indicate what was done since last commit, eg, fixed indention problems
 
 all code can be compiled using the following
 
@@ -17,4 +17,4 @@ g++ -o main main.cpp src/*.cpp -lsfml-graphics -lsfml-window -lsfml-system
 To fix 
 ===============================================
 1)Contain all project classes in the chQ namespace
-2)Add additional comments to files
+<br>2)Add additional comments to files
