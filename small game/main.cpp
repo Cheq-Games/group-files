@@ -3,7 +3,8 @@
 
 int main()
 {
-    Game *g = new Game();
+    Game *g = new Game("Cheq Games");
+    g->init();
     return 0;
 }
 

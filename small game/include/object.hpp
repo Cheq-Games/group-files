@@ -10,21 +10,24 @@ using namespace std;
 class Object
 {
 public:
+    Object();
     Object(string, sf::RenderWindow &);
     Object(string name,int posx, int posy, sf::RenderWindow &);
     ~Object();
     void draw(sf::RenderWindow &);
-    void move(int xpos, int ypos);
+    void move(int , int);
+    void move();
     void setPosition(int, int);
     void loadObject();
-    sf::Vector2f getPosition();   
-    
+    sf::Vector2f getPosition();
+    string objName;
+
 private:
     void loadObject(string name);
     bool loaded;
-    string objName;   
+
     sf::Sprite _sprite;
     sf::Texture _texture;
-   
+
 };//_Object class
 #endif
