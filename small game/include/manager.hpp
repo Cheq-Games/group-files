@@ -9,6 +9,7 @@ This class will be used to keep track of all objects that have been created
 
 */
 
+
 class Manager
 {
 public:
