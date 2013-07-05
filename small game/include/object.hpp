@@ -21,12 +21,13 @@ public:
     void loadObject();
     sf::Vector2f getPosition();
     string objName;
+    sf::Sprite _sprite;
 
 private:
     void loadObject(string name);
     bool loaded;
 
-    sf::Sprite _sprite;
+
     sf::Texture _texture;
 
 };//_Object class

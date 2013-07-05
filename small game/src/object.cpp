@@ -88,5 +88,3 @@ void Object::setPosition(int posx, int posy)
 		_sprite.setPosition( posx, posy);
     }
 }
-
-//object.cpp
