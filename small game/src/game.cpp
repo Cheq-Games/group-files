@@ -10,6 +10,7 @@ Game::Game(string title)
     Manager *_manager = new Manager();
     window.create(sf::VideoMode(ScreenW, ScreenH), title);
     window.setFramerateLimit(30);
+
 }
 
 //~destructor
@@ -24,8 +25,10 @@ void Game::init()
    //Player2 = new Object("data/img1.png", 100, 100, window);
    Player1 = new Object("data/img1.png", 200, 100, window);
    _manager->add(Player1, "PLayer1");
-  // _manager->add(Player2);
-    //Resources();
+
+
+
+
     GameLoop();//start our main loop
 
 }
@@ -52,7 +55,7 @@ void Game::GameLoop()
                     }
                     if(e.key.code == sf::Keyboard::Left)
                     {
-                       Player1->move(-3,0);
+                      // Player1
                     }
                     if(e.key.code == sf::Keyboard::Right)
                     {
@@ -68,17 +71,14 @@ void Game::GameLoop()
                     }
 
 
-
-
-
-
                     }//switch
             }//while loop
          Render();
+         }
          //Player1->update();
         }//while loop
 
-    }
+
 
 
 void Game::Render(){
